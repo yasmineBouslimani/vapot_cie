@@ -1,4 +1,6 @@
 /* GENERAL */
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 body {
     margin: 0;
 }
@@ -22,8 +24,6 @@ body {
 .background {
     background: url(background_images/wall.jpg);
     background-attachment:fixed;
-    
-    
 }
 .section-about {
     width: 75%;
@@ -31,17 +31,17 @@ body {
     font-size: 1.4rem;
     padding: 25px;
     border-radius: 8px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Manjari', sans-serif;
     color: white;
 }
 .section-about h2 {
-    font-size: 2rem;
+    font-size: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 .section-about h3 {
-    text-align: center;
+    display: none;
 }
 .section-about p {
     opacity: 0.5;
@@ -64,92 +64,100 @@ body {
 * {box-sizing:border-box}
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    width: 90%;
 }
 /* Hide the images by default */
 .mySlides {
-  display: none;
+    display: none;
+}
+.mySlides img {
+    border-radius: 20px;
 }
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 /* Caption text */
  .text {
-    color: #f2f2f2;
     padding: 8px 12px;
     position: absolute;
-    bottom: 69%;
+    bottom: 5%;
     width: 100%;
-    font-size: 8vw;
-    font-family: arial;
+    font-size: 7vw;
+    font-family: 'Press Start 2P', cursive;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    color:rgba(255,255,255,0.5);
 } 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: transparent;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: transparent;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 .active, .dot:hover {
-  background-color: #717171;
+    background-color: #717171;
 }
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }
 /* INFOS */
 .infos {
-    background-color: #f0f0f0;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-family:'Manjari', sans-serif;
+}
+.opacity {
+    background: url(background_images/wall.jpg);
+    background-attachment: fixed;
 }
 .infos-container {
     width: 65%;
@@ -157,31 +165,31 @@ body {
     text-align: justify;
 }
 .infos h4 {
-    font-size: 1.3rem;
+    font-size: 25px;
     color: #cd84f1;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 10px;
-    /* white-space: nowrap; */
 }
 .infos ul {
     list-style-type: none;
     padding: 0;
-    font-size: 1rem;
+    font-size: 20px;
     margin-top: 0;
     margin-bottom: 0;
+    color: black;
 }
 .infos a {
     text-decoration: none;
-    color: black;  
+    color: black;
 }
 .box-size {
     width: 100%;
     margin: auto;
 }
 .border-bot {
-    border-bottom: 1px dashed black;
+    border-bottom: 4px dotted black;
 }
 .resize-pics {
     width: 70px;
@@ -201,6 +209,13 @@ body {
 
 
 @media (min-width: 961px){
+    .section-about h2 {
+        font-size: 3rem;
+    }
+    .section-about h3 {
+        display: contents;
+        text-align: center;
+    }
     .infos {
         padding-top: 15px;
         padding-bottom: 15px;
@@ -216,24 +231,23 @@ body {
         width: 50px;
     }
     .padding-box {
-        padding: 20px;
+        padding: 15px;
     }
     .border-bot {
         border-bottom: none;
     }
     .infos h4 {
-        font-size: 15px;
+    font-size: 15px;
     color: #cd84f1;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 10px;
-    /* white-space: nowrap; */
     }
     .infos ul {
         list-style-type: none;
         padding: 0;
-        font-size: 10px;
+        font-size: 15px;
         margin-top: 0;
         margin-bottom: 0;
     }
