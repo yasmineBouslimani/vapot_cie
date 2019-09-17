@@ -1,3 +1,4 @@
+/* GENERAL */
 body {
     margin: 0;
 }
@@ -18,42 +19,222 @@ body {
     flex-direction: column;
 }
 /* SECTION ABOUT */
+.background {
+    background: url(background_images/wall.jpg);
+    background-attachment:fixed;
+    
+    
+}
 .section-about {
-    width: 80%;
+    width: 75%;
     margin: auto;
-    margin-bottom: 30px;
+    font-size: 1.4rem;
+    padding: 25px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.section-about h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.section-about h3 {
+    text-align: center;
+}
+.section-about p {
+    opacity: 0.5;
+}
+.section-about ul {
+    opacity: 0.7;
 }
 .justify-text {
-    text-align: justify;
+    /* text-align: -webkit-match-parent; */
+    text-align: center;
+}
+.padding-bot {
+    padding-bottom: 40px;
+
+}
+/* SLIDESHOW */
+.pad-bot-slide {
+    padding-bottom: 30px;
+}
+* {box-sizing:border-box}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+ .text {
+    color: #f2f2f2;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 69%;
+    width: 100%;
+    font-size: 8vw;
+    font-family: arial;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+} 
+/* Number text (1/3 etc) */
+.numbertext {
+  color: transparent;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 /* INFOS */
 .infos {
     background-color: #f0f0f0;
-    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .infos-container {
-    width: 50%;
+    width: 65%;
     margin: auto;
+    text-align: justify;
+}
+.infos h4 {
+    font-size: 1.3rem;
+    color: #cd84f1;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    /* white-space: nowrap; */
 }
 .infos ul {
     list-style-type: none;
     padding: 0;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .infos a {
     text-decoration: none;
-    color: black;   
+    color: black;  
 }
 .box-size {
     width: 100%;
     margin: auto;
 }
+.border-bot {
+    border-bottom: 1px dashed black;
+}
 .resize-pics {
     width: 70px;
 }
 .vertical-center {
-    padding-top: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.padding-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .space-btw-text {
     padding-left: 30px;
 }
 /* GALLERY SLIDER */
+
+
+@media (min-width: 961px){
+    .infos {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .infos-container {
+        width: 100%;
+        margin: auto;
+        text-align: justify;
+        display: flex;
+        justify-content: center;
+    }
+    .resize-pics {
+        width: 50px;
+    }
+    .padding-box {
+        padding: 20px;
+    }
+    .border-bot {
+        border-bottom: none;
+    }
+    .infos h4 {
+        font-size: 15px;
+    color: #cd84f1;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    /* white-space: nowrap; */
+    }
+    .infos ul {
+        list-style-type: none;
+        padding: 0;
+        font-size: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
