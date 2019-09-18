@@ -57,7 +57,7 @@ body {
     background:#4ec7f3;
   }
   #flip div:last-child div {
-    background:#DC143C;
+    background:#cd84f1;
   }
   @keyframes show {
     0% {margin-top:-270px;}
@@ -105,7 +105,7 @@ body {
 * {box-sizing:border-box}
 /* SLIDE SHOW */
 .black-filter {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .slideshow-container {
     max-width: 1000px;
@@ -143,19 +143,6 @@ body {
     background-color: rgba(250,250,250,0.5);
     color: black;
 }
-/* Caption text */
- .text {
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8%;
-    width: 100%;
-    font-size: 7vw;
-    font-family: 'Press Start 2P', cursive;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    color:rgba(255,255,255,0.5);
-}
 /* Number text (1/3 etc) */
 .numbertext {
     color: transparent;
@@ -163,20 +150,6 @@ body {
     padding: 8px 12px;
     position: absolute;
     top: 0;
-}
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-.active, .dot:hover {
-    background-color: #717171;
 }
 /* Fading animation */
 .fade {
@@ -229,7 +202,7 @@ body {
     color: black;
 }
 .hover-effect a:hover {
-    color: black;
+    color: #cd84f1;;
 }
 .box-size {
     width: 100%;
@@ -268,9 +241,10 @@ body {
     }
     .slideshow-container {
         padding-bottom: 50px;
+        width: 80%;
     }
-    .text {
-        bottom: 12%;
+    .active {
+        background-color: #717171;
     }
     /* INFOS */
     .infos {
@@ -290,16 +264,19 @@ body {
     .padding-box {
         padding: 15px;
     }
+    .space-btw-text {
+        padding-left: 20px;
+    }
     .border-bot {
         border-bottom: none;
     }
     .infos h4 {
-    font-size: 15px;
-    color: #cd84f1;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 15px;
+        font-size: 15px;
+        color: #cd84f1;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 15px;
     }
     .infos ul {
         list-style-type: none;
@@ -309,6 +286,26 @@ body {
         margin-bottom: 0;
     }
     .hover-effect a:hover {
-        color: black;
+        color: #cd84f1;
+    }
+    .zoom {
+        transition: transform .2s;
+        width: 100%;
+        margin: auto;
+    }
+    .zoom:hover {
+        transform: scale(1.1);
+    }
+    .hover-rotate img:hover {
+        -moz-transform:rotate(360deg);
+        -webkit-transform:rotate(360deg);
+        transform: rotate(360deg);
+        transition-duration: 1s;
+    }
+    .hover-rotate-neg img:hover {
+        -moz-transform:rotate(-360deg);
+        -webkit-transform:rotate(-360deg);
+        transform: rotate(-360deg);
+        transition-duration: 1s;
     }
 }
