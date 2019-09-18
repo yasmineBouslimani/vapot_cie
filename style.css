@@ -1,4 +1,114 @@
-body
+@media (max-width: 640px)
+
 {
-    
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.menu{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+  padding-right: 12%;
+}
+
+ul{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li{
+    display:flex;
+    justify-content: space-around;
+    padding: 40px;
+    text-decoration: none;
+    color: white;
+    list-style:none;
+    font-size: 1.4em
+}
+
+.about:hover{
+    color: #e797ff;
+}
+.logo:hover{
+    color: #b6fffc;
+}
+
+.catalog:hover{
+    color: #b6fffc;
+}
+
+.mail:hover{
+    color: #e797ff;
+}
+.home:hover{
+    color: #b6fffc;
+}
+
+.banner {
+    display:flex;
+    background-color:black;
+    justify-content:center;
+    width:auto;
+}
+
+.logo{
+      display:flex;
+}
+
+}
+
+@media (min-width: 640px)
+{
+  .menu{
+    display:flex;
+    flex-direction: row;
+    background: black;
+    justify-content: space-around;
+    margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+ul{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li{
+    display:flex;
+    justify-content: space-around;
+    padding: 40px;
+    text-decoration: none;
+    color: white;
+    list-style:none;
+    font-size: 1.4em
+}
+
+.about:hover{
+    color: #e797ff;
+}
+.logo:hover{
+    color: #b6fffc;
+}
+
+.catalog:hover{
+    color: #b6fffc;
+}
+
+.mail:hover{
+    color: #e797ff;
+}
+.home:hover{
+    color: #b6fffc;
+}
+
 }
