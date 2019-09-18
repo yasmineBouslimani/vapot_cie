@@ -1,16 +1,34 @@
-
-
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+.text-center {
+    text-align: center;
+}
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.d-flex {
+    display: flex;
+}
+.d-flex-center-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 body {
-  margin: 0;
+    margin: 0;
 }
 .banner {
     display: flex;
     height: auto;
     background-repeat: no-repeat;
-  }
-  .banner img {
+}
+.banner img {
     width: 100%;
-  }
+}
 .menu {
   display: none;
   text-align:center;
@@ -33,7 +51,6 @@ body {
 .topnav #myLinks {
  display: none;
 }
-
 /* Style navigation menu links */
 .topnav a {
  color: white;
@@ -42,7 +59,6 @@ body {
  font-size: 17px;
  display: block;
 }
-
 /* Style the hamburger menu */
 .topnav a.icon {
  background: black;
@@ -51,46 +67,245 @@ body {
  right: 0;
  top: 0;
 }
-
 /* Add a grey background color on mouse-over */
 .hover-menu a:hover {
  background-color: #ddd;
  color: black;
 }
-
 /* Style the active link (or home/logo) */
 .active {
  background-color: black;
  color: white;
 }
 /* burguer */
-
-
-@media only screen and (min-width: 961px)
-{
-  .logo{
-        display: flex;
-        width: 10%;
+/* ANIMATE TEXT */
+#container {
+    color:#999;
+    text-transform: uppercase;
+    font-size:36px;
+    font-weight:bold;
+    padding-top:30px;
+    padding-bottom: 30px;
+    width:100%;
+    bottom:45%;
+    display:block;
+    background-color: #f0f0f0;
+    text-align:center;
+    font-family:'Roboto';
   }
-  /* MENU DESKTOP */
-  .topnav {
+  #flip {
+    height:50px;
+    overflow:hidden;
+  }
+  #flip > div > div {
+    color:#fff;
+    padding:0px 12px;
+    height:48px;
+    margin-bottom:45px;
+    display:inline-block;
+  }
+  #flip div:first-child {
+    animation: show 5s linear infinite;
+  }
+  #flip div div {
+    background:#42c58a;
+  }
+  #flip div:first-child div {
+    background:#4ec7f3;
+  }
+  #flip div:last-child div {
+    background:#cd84f1;
+  }
+  @keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+  }
+/* SECTION ABOUT */
+.background {
+    background: url(background_images/wall.jpg);
+    background-attachment:fixed;
+}
+.section-about {
+    width: 75%;
+    margin: auto;
+    font-size: 1.4rem;
+    padding: 25px;
+    border-radius: 8px;
+    /* font-family: 'Manjari', sans-serif; */
+    font-family:'Roboto';
+    color: white;
+}
+.section-about h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.section-about h3 {
     display: none;
-  }
-  .menu{
+}
+.section-about p {
+    opacity: 0.7;
+}
+.section-about ul {
+    opacity: 0.7;
+}
+.justify-text {
+    text-align: center;
+}
+/* SLIDE SHOW */
+.black-filter {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    margin-bottom: -4px;
+}
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(250,250,250,0.5);
+    color: black;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+    color: transparent;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/* INFOS */
+.infos {
+    background-color: #f0f0f0;
+    /* font-family:'Manjari', sans-serif; */
+    font-family:'Roboto';
+}
+.opacity {
+    background: url(background_images/wall.jpg);
+    background-attachment: fixed;
+}
+.infos-container {
+    width: 65%;
+    margin: auto;
+    text-align: justify;
+}
+.infos h4 {
+    font-size: 25px;
+    color: #cd84f1;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.infos ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: black;
+}
+.infos a {
+    text-decoration: none;
+    color: black;
+}
+.hover-effect a:hover {
+    color: #cd84f1;;
+}
+.box-size {
+    width: 100%;
+    margin: auto;
+}
+.border-bot {
+    border-bottom: 4px dotted black;
+}
+.resize-pics {
+    width: 70px;
+}
+.vertical-center {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.padding-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.space-btw-text {
+    padding-left: 30px;
+}
+/* DESKTOP */
+@media only screen and (min-width: 961px) {
+    .logo img {
+        display: flex;
+        width: 40%;
+    }
+    /* MENU DESKTOP */
+    .topnav {
+    display: none;
+    }
+    .menu{
     display:flex;
     justify-content: space-around;
     margin: 0;
     height: 80px;
     background-color: black;
-  }
-  nav a
-  {
-  text-decoration:none;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  font-variant: small-caps;
-  letter-spacing: 5px;
-  }
+    }
+    nav a
+    {
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-variant: small-caps;
+    letter-spacing: 5px;
+    }
   .menu ul{
     display:flex;
     align-items: center;
@@ -99,19 +314,98 @@ body {
     color: white;
   }
   .menu li{
-      text-decoration: none;
-      display:flex;
-      justify-content: space-around;
-      padding: 40px;
-      text-decoration: none;
-      color: white;
-      list-style:none;
-      font-size: 1.4em
+    text-decoration: none;
+    display:flex;
+    justify-content: space-around;
+    padding: 40px;
+    text-decoration: none;
+    color: white;
+    list-style:none;
+    font-size: 1.4em;
   }
   nav a:hover {
     color: #cd84f1;
     text-decoration: overline;
   }
-}
-
+    /* SECTION ABOUT */
+    .section-about h2 {
+        font-size: 3rem;
+    }
+    .section-about h3 {
+        display: contents;
+        text-align: center;
+    }
+    /* SLIDESHOW */
+    .effect a img:hover {
+        opacity: 0.6;
+    }
+    .slideshow-container {
+        padding-bottom: 50px;
+        width: 80%;
+    }
+    .active {
+        background-color: #717171;
+    }
+    /* INFOS */
+    .infos {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .infos-container {
+        width: 100%;
+        margin: auto;
+        text-align: justify;
+        display: flex;
+        justify-content: center;
+    }
+    .resize-pics {
+        width: 50px;
+    }
+    .padding-box {
+        padding: 15px;
+    }
+    .space-btw-text {
+        padding-left: 20px;
+    }
+    .border-bot {
+        border-bottom: none;
+    }
+    .infos h4 {
+        font-size: 15px;
+        color: #cd84f1;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 15px;
+    }
+    .infos ul {
+        list-style-type: none;
+        padding: 0;
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .hover-effect a:hover {
+        color: #cd84f1;
+    }
+    .zoom {
+        transition: transform .2s;
+        width: 100%;
+        margin: auto;
+    }
+    .zoom:hover {
+        transform: scale(1.1);
+    }
+    .hover-rotate img:hover {
+        -moz-transform:rotate(360deg);
+        -webkit-transform:rotate(360deg);
+        transform: rotate(360deg);
+        transition-duration: 1s;
+    }
+    .hover-rotate-neg img:hover {
+        -moz-transform:rotate(-360deg);
+        -webkit-transform:rotate(-360deg);
+        transform: rotate(-360deg);
+        transition-duration: 1s;
+    }
 }
