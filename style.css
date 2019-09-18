@@ -1,6 +1,4 @@
 /* GENERAL */
-@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 .text-center {
     text-align: center;
@@ -22,7 +20,6 @@ body {
     margin: 0;
 }
 .banner {
-    display: flex;
     height: auto;
     background-repeat: no-repeat;
 }
@@ -54,7 +51,7 @@ body {
 /* Style navigation menu links */
 .topnav a {
  color: white;
- padding: 14px 16px;
+ padding: 6px 16px;
  text-decoration: none;
  font-size: 17px;
  display: block;
@@ -64,8 +61,8 @@ body {
  background: black;
  display: block;
  position: absolute;
- right: 0;
- top: 0;
+ right: -7px;
+ top: 18px;
 }
 /* Add a grey background color on mouse-over */
 .hover-menu a:hover {
@@ -76,6 +73,10 @@ body {
 .active {
  background-color: black;
  color: white;
+}
+#myLinks a {
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 /* burguer */
 /* ANIMATE TEXT */
@@ -92,30 +93,35 @@ body {
     background-color: #f0f0f0;
     text-align:center;
     font-family:'Roboto';
-  }
+    /* margin-top: 70px;
+    position: relative; */
+}
   #flip {
     height:50px;
     overflow:hidden;
-  }
+}
   #flip > div > div {
     color:#fff;
     padding:0px 12px;
     height:48px;
     margin-bottom:45px;
     display:inline-block;
-  }
+}
   #flip div:first-child {
     animation: show 5s linear infinite;
-  }
+}
   #flip div div {
     background:#42c58a;
-  }
+}
   #flip div:first-child div {
     background:#4ec7f3;
-  }
+}
   #flip div:last-child div {
     background:#cd84f1;
-  }
+}
+  .fa {
+      font-size:1.3rem !important;
+}
   @keyframes show {
     0% {margin-top:-270px;}
     5% {margin-top:-180px;}
@@ -125,7 +131,7 @@ body {
     71% {margin-top:0px;}
     99.99% {margin-top:0px;}
     100% {margin-top:-270px;}
-  }
+}
 /* SECTION ABOUT */
 .background {
     background: url(background_images/wall.jpg);
@@ -134,7 +140,7 @@ body {
 .section-about {
     width: 75%;
     margin: auto;
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding: 25px;
     border-radius: 8px;
     /* font-family: 'Manjari', sans-serif; */
@@ -144,7 +150,7 @@ body {
 .section-about h2 {
     font-size: 30px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-transform: uppercase;
 }
 .section-about h3 {
@@ -225,20 +231,20 @@ body {
 /* INFOS */
 .infos {
     background-color: #f0f0f0;
-    /* font-family:'Manjari', sans-serif; */
+    font-family:'Manjari', sans-serif;
     font-family:'Roboto';
 }
-.opacity {
+/* .opacity {
     background: url(background_images/wall.jpg);
     background-attachment: fixed;
-}
+}  */
 .infos-container {
     width: 65%;
     margin: auto;
     text-align: justify;
 }
 .infos h4 {
-    font-size: 25px;
+    font-size: 21px;
     color: #cd84f1;
     text-transform: uppercase;
     margin-top: 0;
@@ -248,7 +254,7 @@ body {
 .infos ul {
     list-style-type: none;
     padding: 0;
-    font-size: 20px;
+    font-size: 17px;
     margin-top: 0;
     margin-bottom: 0;
     color: black;
@@ -297,6 +303,9 @@ body {
     margin: 0;
     height: 80px;
     background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
     }
     nav a
     {
@@ -306,14 +315,14 @@ body {
     font-variant: small-caps;
     letter-spacing: 5px;
     }
-  .menu ul{
+    .menu ul {
     display:flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: white;
-  }
-  .menu li{
+    }
+    .menu li{
     text-decoration: none;
     display:flex;
     justify-content: space-around;
@@ -322,14 +331,31 @@ body {
     color: white;
     list-style:none;
     font-size: 1.4em;
-  }
-  nav a:hover {
-    color: #cd84f1;
-    text-decoration: overline;
-  }
+    }
+    nav a:hover {
+        color: #cd84f1;
+        text-decoration: overline;
+    }
+    .banner img {
+        position: relative;
+        top: 75px;
+    }
+    /* ANIMATE TEXT */
+    #container {
+        margin-top: 70px;
+        position: relative;
+    }
     /* SECTION ABOUT */
+    /* ANCRE */
+    .ancres{
+        display: block; 
+        height: 65px; /*same height as header*/ 
+        margin-top: -65px; /*same height as header*/ visibility: hidden;
+    }
+    /* ANCRE */
     .section-about h2 {
         font-size: 3rem;
+        margin-bottom: 25px;
     }
     .section-about h3 {
         display: contents;
@@ -348,11 +374,11 @@ body {
     }
     /* INFOS */
     .infos {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
     .infos-container {
-        width: 100%;
+        width: 80%;
         margin: auto;
         text-align: justify;
         display: flex;
