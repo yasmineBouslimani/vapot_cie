@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -6,31 +6,46 @@
 	<meta name="Description" content="The official website of Vapeetcie.com sustain electric cigaret">
 	<title>E-liquides Bordeaux</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <meta name='viewport'
-      content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
       <header>
-          <nav>
-
-          <ul class="menu">
+          <!-- MENU DESKTOP -->
+          <nav class="menu">
+          <ul>
               <li class="logo"><img src="logo.png"/></li>
-              <li class="home">Accueil</li>
-              <li class="about">A propos</li>
-              <li class="catalog">Catalogue</li>
-              <li class="mail">Contact</li>
+              <li class="home"><a href="#">accueil</a></li>
+              <li class="about"><a href="#about">nous</a></li>
+              <li class="catalog"><a href="#">shop</a></li>
+              <li class="mail"><a href="#contact">contact<a/></li>
           </ul>
-
           </nav>
+          <!-- burguer -->
+          <div class="topnav size-logo">
+                <a href="#home" class="active"><img src="logo.png"/></a>
+          <!-- Navigation links (hidden by default) -->
+                <div id="myLinks" class="hover-menu">
+                    <a href="#">accueil</a>
+                    <a href="#about">nous</a>
+                    <a href="#">shop</a>
+                    <a href="#contact">contact</a>
+                </div>
+         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+          </div>
+          <div class="banner">
+              <img src="neon2.png" alt="">
+          </div>
+      </header>
 
-    </header>
 
-          <section>
-              <div class="banner">
-                  <img src="neon.png" alt="neon"/>
-              </div>
-          </section>
+
+
+          <script src="burger.js"></script>
 </body>
 
 </html>

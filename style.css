@@ -1,114 +1,117 @@
-@media (max-width: 640px)
 
-{
 
 body {
   margin: 0;
-  background-color: black;
 }
-
-.menu{
-  display:flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 0;
-  padding-right: 12%;
-}
-
-ul{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-
-li{
-    display:flex;
-    justify-content: space-around;
-    padding: 40px;
-    text-decoration: none;
-    color: white;
-    list-style:none;
-    font-size: 1.4em
-}
-
-.about:hover{
-    color: #e797ff;
-}
-.logo:hover{
-    color: #b6fffc;
-}
-
-.catalog:hover{
-    color: #b6fffc;
-}
-
-.mail:hover{
-    color: #e797ff;
-}
-.home:hover{
-    color: #b6fffc;
-}
-
 .banner {
-    display:flex;
-    background-color:black;
-    justify-content:center;
-    width:auto;
+    display: flex;
+    height: auto;
+    background-repeat: no-repeat;
+  }
+  .banner img {
+    width: 100%;
+  }
+.menu {
+  display: none;
+  text-align:center;
+}
+/* burguer */
+/* Style the navigation menu */
+.topnav {
+ overflow: hidden;
+ background-color: black;
+ position: relative;
+ font-family: 'roboto';
+ font-variant: small-caps;
+ letter-spacing: 5px;
+ text-align: center;
+}
+.size-logo img{
+  width:60px;
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+ display: none;
 }
 
-.logo{
-      display:flex;
+/* Style navigation menu links */
+.topnav a {
+ color: white;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+ display: block;
 }
 
+/* Style the hamburger menu */
+.topnav a.icon {
+ background: black;
+ display: block;
+ position: absolute;
+ right: 0;
+ top: 0;
 }
 
-@media (min-width: 640px)
+/* Add a grey background color on mouse-over */
+.hover-menu a:hover {
+ background-color: #ddd;
+ color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+ background-color: black;
+ color: white;
+}
+/* burguer */
+
+
+@media only screen and (min-width: 961px)
 {
+  .logo{
+        display: flex;
+        width: 10%;
+  }
+  /* MENU DESKTOP */
+  .topnav {
+    display: none;
+  }
   .menu{
     display:flex;
-    flex-direction: row;
-    background: black;
     justify-content: space-around;
     margin: 0;
-}
-
-body {
-  margin: 0;
-  background-color: black;
-}
-
-ul{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-
-li{
+    height: 80px;
+    background-color: black;
+  }
+  nav a
+  {
+  text-decoration:none;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-variant: small-caps;
+  letter-spacing: 5px;
+  }
+  .menu ul{
     display:flex;
-    justify-content: space-around;
-    padding: 40px;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: white;
-    list-style:none;
-    font-size: 1.4em
-}
-
-.about:hover{
-    color: #e797ff;
-}
-.logo:hover{
-    color: #b6fffc;
-}
-
-.catalog:hover{
-    color: #b6fffc;
-}
-
-.mail:hover{
-    color: #e797ff;
-}
-.home:hover{
-    color: #b6fffc;
+  }
+  .menu li{
+      text-decoration: none;
+      display:flex;
+      justify-content: space-around;
+      padding: 40px;
+      text-decoration: none;
+      color: white;
+      list-style:none;
+      font-size: 1.4em
+  }
+  nav a:hover {
+    color: #cd84f1;
+    text-decoration: overline;
+  }
 }
 
 }
