@@ -1,5 +1,6 @@
 # VAPEETCIE Website Project
-Demo: https://yayaboubou.github.io/Projetvapotetcie/
+
+![](picture-readme.PNG)
 
 In September 2019, the Wild Code School wanted to challenge learners to work towards HTML, CSS languages.
 
